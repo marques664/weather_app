@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:weather_app/ui/pages/history_page.dart';
 import '../../services/weather_service.dart';
 import '../../models/weather_model.dart';
 import '../widgets/weather_info.dart';
@@ -109,6 +110,23 @@ class _HomePageState extends State<HomePage> {
                 textAlign: TextAlign.center,
               ),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                MaterialPageRoute(builder: (context) => const HistoryPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                padding : const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                minimumSize: const Size(100, 50),
+                backgroundColor: const Color.fromARGB(255, 0, 0, 0),
+              ),
+              child: const Text('Ver Histórico',
+              style: TextStyle(color: Colors.white),
+              textAlign: TextAlign.center,),
+            ),
+            
             const SizedBox(height: 32),
             if (_error.isNotEmpty)
               Text(_error, style: const TextStyle(color: Colors.red)),
