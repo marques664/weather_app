@@ -8,7 +8,7 @@ import 'package:firebase_core/firebase_core.dart';
 import '../firebase_options.dart';
 
 class WeatherService {
-  final String apiKey = 'e651585d10115a5e080128ecfb33ed5f';
+  final String apiKey = 'API_KEY_HERE';
 
   Future<WeatherModel?> getWeather(String city) async {
     final url =
