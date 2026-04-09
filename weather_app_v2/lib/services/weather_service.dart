@@ -83,4 +83,14 @@ Future<Weather> getWeatherByLocation() async {
 
     return city ?? "";
   }
+
+  /// Tenta obter clima por localização, se falhar usa cidade padrão
+  Future<Weather> getWeatherWithFallback({String fallbackCity = 'São Paulo'}) async {
+    try {
+      return await getWeatherByLocation();
+    } catch (e) {
+      // Se GPS falhar, usa cidade padrão
+      return await getWeather(fallbackCity);
+    }
+  }
 }
