@@ -1,16 +1,18 @@
-# weather_app
+Flutter application that displays weather information based on the city typed by the user.
 
-A new Flutter project.
+## Technologies
+- Flutter
+- Dart
+- REST API
 
-## Getting Started
+## Features
+- Search weather by city name
+- Autocomplete suggestions
+- Displays temperature and weather conditions
 
-This project is a starting point for a Flutter application.
+## Purpose
+This version was developed to practice:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- API requests
+- handling user input
+- dynamic interface updates
