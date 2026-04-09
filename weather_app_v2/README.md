@@ -1,17 +1,29 @@
-# weather_app_v2
+# Weather App V2
 
-A new Flutter project.
+Improved version of the weather application with a more minimalistic interface and automatic location detection using GPS.
 
-## Getting Started
+## Technologies
+- Flutter
+- Dart
+- REST API
+- Geolocation
 
-This project is a starting point for a Flutter application.
+## Features
+- Detects user location automatically
+- Displays local weather
+- Option to search city manually
+- Cleaner and simplified interface
 
-A few resources to get you started if this is your first Flutter project:
+## Purpose
+This version focuses on improving usability and exploring device resources such as GPS.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Main learning points:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- geolocation integration
+- improving user experience
+- structuring cleaner interfaces
+
+## Improvements compared to V1
+- Less manual input required
+- Faster weather visualization
+- More practical user flow
